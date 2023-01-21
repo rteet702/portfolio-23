@@ -8,14 +8,15 @@ const scp = Source_Code_Pro({ subsets: ["latin"] });
 const Navbar: NextComponentType = () => {
     return (
         <div
-            className={`p-5 bg-neutral-800 shadow-lg text-neutral-300 font-bold ${scp.className}`}
+            className={`p-5 w-full bg-neutral-800 shadow-lg text-neutral-300 font-bold ${scp.className}`}
         >
             <nav className="flex items-center gap-5">
                 <Link href="/">
                     <AiFillHome />
                 </Link>
-                <Link href="/about">About</Link>
-                <Link href="/projects">Projects</Link>
+                <Link href="/projects" className="hover:text-white">
+                    Projects
+                </Link>
                 <Link href="/contact">Contact Me</Link>
             </nav>
         </div>
